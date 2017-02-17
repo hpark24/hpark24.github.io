@@ -10,6 +10,10 @@ body {
     font-family: 'Roboto', arial, sans-serif;
 }
 
+b {
+    font-weight: 700;
+}
+
 /*****************************/
 /*** Header Styles Begins ***/
 /****************************/
@@ -145,7 +149,7 @@ nav ul li {
 
 /* Make the first item of the list bold and blue */
 nav ul li:first-child { 
-    font-weight: bolder;
+    font-weight: 700;
     color: #4285f4;
     border-bottom: 3px solid #4285f4;
     
@@ -253,14 +257,30 @@ main #profile {
     vertical-align: top;
 }
 
+/*****************/
+/* Profile Image */
+/*****************/
+
 main #profile #profile-img {
     position: relative;
+    
+    display: flex;
+    flex-wrap: nowrap;
     
     width: inherit;
     height: 186px;
 }
 
-main #profile #profile-img button {
+main #profile #profile-img div {
+    overflow: hidden;
+    height: 100%;
+}
+
+main #profile #profile-img img{
+    height: 100%;
+}
+
+main #profile #profile-img a {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -278,6 +298,10 @@ main #profile #profile-img button {
     text-decoration: none;
     text-shadow: 0 0 2px black,0 0 3px black;
 }
+
+/****************/
+/* Profile Name */
+/****************/
 
 main #profile #profile-name {
     border-bottom: solid 1px #ebebeb;
@@ -303,12 +327,17 @@ main #profile #profile-name h2 {
 main #profile #profile-name h3 {
     color: #777;
     font-size: 13px;
+    font-weight: normal;
     overflow: hidden;
     
     margin: 0;
     margin-top: 4px;
     margin-bottom: 4px;
 }
+
+/******************/
+/* Profile Detail */
+/******************/
 
 main #profile #detail {
     padding: 0;
