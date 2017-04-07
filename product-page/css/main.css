@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+}
+
+/* Text Font */
+h1, h2, h3, h4, p, input {
+    font-family: 'Nunito', sans-serif;
+    font-weight: lighter;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 39px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px; 
+}
+
+h4 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 24px;
+}
+
+input {
+    font-size: 16px;
+}
+
+form {
+    position: relative;
+    width: 411px;
+    height: 32px;
+    display: flex;
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: #949494;
+}
+
+form input[type="text"] {
+    /*width: 340px;*/
+    width: calc(100% - 71px);
+    height: auto;
+    background-color: white;
+    cursor: auto;
+    padding: 3px 3px 3px 8px;
+    border-width: 0;
+}
+
+form input[type="email"] {
+    /*width: 340px;*/
+    width: calc(100% - 71px);
+    height: auto;
+    background-color: white;
+    cursor: auto;
+    padding: 3px 3px 3px 8px;
+    border-width: 0;
+}
+
+form input[type="submit"] {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 71px;
+    height: 100%;
+    color: #FFFFFF;
+    background-color: #405C7C;
+    padding: 2px 6px 3px;
+    border-width: 0;
+}
+
+img.arc-border{
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+
+img.flip{
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    
+}
+
+/*******************************************/
+/*******************************************/
+
+header {
+    height: 673px;
+    padding-top: 154px;
+}
+
+header #hero-content {
+    width: 768px;
+    height: 382px;
+    
+    padding-left: 40px;
+    
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header #hero-content img {
+    width: 181px;
+    height: 382px;
+}
+
+header #copy {
+    width: 452px;
+    height: 276px;
+    
+    margin-top: 82px;
+    float: right;
+}
+
+header #copy h1 {
+    margin-bottom: 17px;
+}
+
+header #copy h2 {
+    margin-top: 29px;
+    margin-bottom: 7px;
+    line-height: 39px;
+}
+
+/*******************************************/
+/*******************************************/
+
+main {
+    height: 3764px;
+}
+
+main h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+main h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px
+}
+
+main #synopsis {
+    padding-top: 105px;
+    margin-top: -5px;
+    margin-bottom: -1px;
+    height: 458px;
+    text-align: center;
+    background-color: #439EEA;
+}
+
+main #synopsis h2 {
+    margin-bottom: 80px;
+    color: #FFFFFF;
+}
+
+main #synopsis p {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 875px;
+    font-weight: normal;
+    color: #122E5D;
+}
+
+main #how-it-works {
+    position: relative;
+    top: -60px;
+    padding-top: 180px;
+    margin-bottom: -140px;
+    height: 2545px;
+    background-color: #AEC7FF;
+    z-index: -1;
+    text-align: center;
+}
+
+main #how-it-works h2{
+    color: #000000;
+    margin-bottom: 90px;
+}
+
+main #how-it-works img[src="image/put-in.png"]{
+    width: 738px;
+    margin-bottom: 50px;
+}
+
+main #how-it-works img[src="image/sit-and-wait.png"]{
+    width: 401px;
+    margin-bottom: 50px;
+}
+
+main #how-it-works img[src="image/managing.png"]{
+    width: 653px;
+    margin-bottom: 50px;
+}
+
+main #how-it-works p{
+    color: #293642;
+    margin-bottom: 300px;
+}
+
+main #try-it-out {
+    margin-top: -5px;
+    height: 800px;
+    background-color: #439EEA;
+    text-align: center;
+}
+
+main #try-it-out h2 {
+    margin-bottom: 80px;
+    color: #FFFFFF;
+}
+
+main #try-it-out p {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 875px;
+    font-weight: normal;
+    color: #122E5D;
+}
+
+main #try-it-out form {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #122E5D;
+    border-color: #BCBCBC;
+}
+
+main #try-it-out form input[type="text"] {
+    /*width: 537px ;*/
+}
+
+main #try-it-out #ups-form {
+    margin-bottom: 60px;
+}
+
+main #try-it-out #iphone-cover {
+    position: relative;
+    top: -5px;
+    height: 133px;
+    margin-bottom: -6px;
+    background-color: #4d62b7;
+}
+
+/*******************************************/
+/*******************************************/
+
+footer {
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 130px;
+    /*height: 571px;*/
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 60px;
+}
+
+footer h3 {
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 27px;
+}
+
+footer form {
+    width: 601px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer form input[type="email"] {
+    text-align: center;
+}
+
+#last-div{
+    margin-top: -5px;
+    height: 65px;
+    background-color: #4d62b7;
+}
