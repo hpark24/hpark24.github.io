@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+body {
+    /*min-width: 884px;*/
+}
+
 /* Text Font */
 h1, h2, h3, h4, p, input {
     font-family: 'Nunito', sans-serif;
@@ -79,26 +83,37 @@ form input[type="submit"] {
     border-width: 0;
 }
 
-img.arc-border{
+.arc-border {
+    background: transparent url(../image/blue-arc.png) no-repeat center bottom;
+    background-size: 100% 100%;
+    
     width: 100%;
     margin: auto;
-    height: auto;
+    height: 43px;
 }
 
-img.flip{
+.flip {
     -moz-transform: scaleY(-1);
     -o-transform: scaleY(-1);
     -webkit-transform: scaleY(-1);
     transform: scaleY(-1);
-    
 }
 
 /*******************************************/
 /*******************************************/
 
 header {
-    height: 673px;
-    padding-top: 154px;
+    /*height: 673px;*/
+    padding-top: 33px;
+    padding-bottom: 140px;
+    text-align: center;
+}
+
+header #app-logo{
+    width: 82px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 134px;
 }
 
 header #hero-content {
@@ -122,10 +137,12 @@ header #copy {
     
     margin-top: 82px;
     float: right;
+    text-align: left;
 }
 
 header #copy h1 {
     margin-bottom: 17px;
+    font-weight: bold;
 }
 
 header #copy h2 {
@@ -138,7 +155,8 @@ header #copy h2 {
 /*******************************************/
 
 main {
-    height: 3764px;
+    /*height: 3764px;*/
+    text-overflow: clip;
 }
 
 main h2 {
@@ -153,16 +171,16 @@ main h3 {
 }
 
 main #synopsis {
-    padding-top: 105px;
-    margin-top: -5px;
-    margin-bottom: -1px;
+    padding-top: 145px;
+    /*margin-top: -5px;*/
+    /*margin-bottom: -1px;*/
     height: 458px;
     text-align: center;
     background-color: #439EEA;
 }
 
 main #synopsis h2 {
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     color: #FFFFFF;
 }
 
@@ -178,8 +196,9 @@ main #how-it-works {
     position: relative;
     top: -60px;
     padding-top: 180px;
-    margin-bottom: -140px;
-    height: 2545px;
+    padding-bottom: 80px;
+    margin-bottom: -101px;
+    /*height: 2545px;*/
     background-color: #AEC7FF;
     z-index: -1;
     text-align: center;
@@ -210,8 +229,12 @@ main #how-it-works p{
     margin-bottom: 300px;
 }
 
+main #how-it-works div:last-child p{
+    margin-bottom: 180px;
+}
+
 main #try-it-out {
-    margin-top: -5px;
+    margin-top: 0px;
     height: 800px;
     background-color: #439EEA;
     text-align: center;
@@ -259,10 +282,13 @@ main #try-it-out #iphone-cover {
 
 footer {
     position: relative;
-    padding-top: 110px;
-    padding-bottom: 130px;
+    /*padding-top: 110px;*/
+    /*padding-bottom: 130px;*/
+    padding-top: 180px;
+    padding-bottom: 150px;
     /*height: 571px;*/
     text-align: center;
+    white-space: nowrap;
 }
 
 footer h2 {
