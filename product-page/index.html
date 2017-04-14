@@ -4,6 +4,8 @@
         <title>Introducing WW</title>
         <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700,700i" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
         <header>
@@ -14,13 +16,13 @@
             
                 <div id="copy">
                     <h1>Always Know Where Your Packages Are</h1>
-                    <h3>Put your online transaction info and Keep notified of your shipment's whereabouts</h3>
+                    <h3>Put your online transaction information and be notified of when your shipment arrives</h3>
                     <h2>Launching This Summer</h2>
-                    <h4>Email to you when it's ready</h4>
+                    <h4>We will email to you when it's ready</h4>
                     <form>
-                        <input type="email" placeholder="Your Email Address">
+                        <input type="text" name="email" placeholder="Your Email Address">
                         <!--<button>Done</button>-->
-                        <input type="submit" value="Done">
+                        <input type="submit" value="Send it">
                     </form>
                 </div>
             </div>
@@ -71,7 +73,7 @@
                     <h2>Try It Out</h2>
                     <h3>Put your UPS tracking code to see your progress bar</h3>
                     <form>
-                        <input type="text" placeholder="UPS Code">
+                        <input type="text" placeholder="UPS Code" name="upsCode">
                         <!--<button>Done</button>-->
                         <input type="submit" value="Try this">
                     </form>
@@ -87,12 +89,14 @@
         
         <footer>
             <h2>Are you getting interested in WW?</h2>
-            <h3>We will notify you when it launches</h3>
+            <h3>We will let you know if you tell us your email address</h3>
             <form>
-                <input type="email" placeholder="Your Email Address">
+                <input type="text" name="email" placeholder="Write Your Email Address">
                 <!--<button>Done</button>-->
-                <input type="submit" value="Done">
+                <input type="submit" value="Cool !">
             </form>
+            
+            
         </footer>
         
         <!--<img class="arc-border flip" src="image/arc-border-concave.svg" />-->
