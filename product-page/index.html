@@ -3,6 +3,7 @@
     <head>
         <title>Introducing WW</title>
         <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700,700i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/main.js"></script>
@@ -16,14 +17,17 @@
             
                 <div id="copy">
                     <h1>Always Know Where Your Packages Are</h1>
-                    <h3>Put your online transaction information and be notified of when your shipment arrives</h3>
+                    <h3>Put your online transaction information and be notified of when your package arrives</h3>
                     <h2>Launching This Summer</h2>
-                    <h4>We will email to you when it's ready</h4>
-                    <form>
-                        <input type="text" name="email" placeholder="Your Email Address">
+                    <h4>We will send an email to you when it's ready</h4>
+                    <form class="email-form" id="headerMailFrom">
+                        <input type="text" name="email" placeholder="Give Us Your Email Address">
                         <!--<button>Done</button>-->
                         <input type="submit" value="Send it">
                     </form>
+                    <div class="success-response">
+                        <p></p>
+                    </div>
                 </div>
             </div>
         </header>
@@ -31,8 +35,8 @@
         <main>
             <div class="arc-border"></div>
             <section id="synopsis">
-                <h2>Never be clueless about your shipment </h2>
-                <p>WW will collect your transaction from any online retail store, track your item, and show you where it is and when it will arrive.</p>
+                <h2>Never be clueless about your package </h2>
+                <p>WW will collect the transactions you made from any online retail store, track your packages, and then tell you when it will arrive to yoour home.</p>
             </section>
             <div class="arc-border flip"></div>
             
@@ -44,7 +48,7 @@
                     <h3>Put in your shipping information</h3>
                     <p>
                         Sync your Amazon or E-Bay account to track all your orders.</br>
-                        For third party retailers, add a tracking code of your item.
+                        For third party retailers, just add a tracking code of your item.
                     </p>
                 </div>
                 
@@ -52,7 +56,7 @@
                     <img src="image/sit-and-wait.png" alt="Just sit and watch your phones" />
                     <h3>Watch the progress bar and wait</h3>
                     <p>
-                        Check the location and the arrival date of your shipment at any time.</br>
+                        Check the progress and arrival date of your package at any time.</br>
                         <!--<strike>For third party retailers, just add a tracking code of your item.</strike>-->
                     </p>
                 </div>
@@ -61,25 +65,30 @@
                     <img src="image/managing.png" alt="Clean up your infos and history" />
                     <h3>Manage your progress bars easily</h3>
                     <p>
-                        Drag the bar away once you get your shipment.</br>
-                        Change the order of each bar for your own priority.
+                        Drag the progress bar away to remove the item you already received.</br>
+                        Change the order of each bar for your own convenience.
                     </p>
                 </div>
             </section>
             
             <div class="arc-border"></div>
             <section id="try-it-out">
-                <div id="ups-form">
+                <div id="usps-form">
                     <h2>Try It Out</h2>
-                    <h3>Put your UPS tracking code to see your progress bar</h3>
+                    <h3>Put your USPS tracking code to test your progress bar</h3>
+                    <!--<form method=”POST” name="uspsForm" ACTION=tracking.php>-->
                     <form>
-                        <input type="text" placeholder="UPS Code" name="upsCode">
+                        <input type="text" placeholder="USPS Code" name="uspsCode">
                         <!--<button>Done</button>-->
                         <input type="submit" value="Try this">
                     </form>
                 </div>
-                <div>
+                <div id="app-screen">
                     <img src="image/iphone-actual-app.png" alt="It tracks your shipment." />
+                    <div id="box-in-app">
+                        <p id="package-id">ID</p>
+                        <div id="progress-bar"></div>
+                    </div>
                 </div>
                 <div id="iphone-cover"></div>
                 <!--<img class="arc-border" src="image/arc-border-concave.svg" />-->
@@ -89,14 +98,15 @@
         
         <footer>
             <h2>Are you getting interested in WW?</h2>
-            <h3>We will let you know if you tell us your email address</h3>
-            <form>
+            <h3>We will notify you by email when our app launches</h3>
+            <form class="email-form" id="footerMailFrom">
                 <input type="text" name="email" placeholder="Write Your Email Address">
                 <!--<button>Done</button>-->
-                <input type="submit" value="Cool !">
+                <input type="submit" value="Done!">
             </form>
-            
-            
+            <div class="success-response">
+                <p></p>
+            </div>
         </footer>
         
         <!--<img class="arc-border flip" src="image/arc-border-concave.svg" />-->
