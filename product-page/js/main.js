@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    $.support.cors = true;
+    
     $(".success-response p").hide();
     
     $(".email-form").each(function (){
@@ -48,7 +50,7 @@ $(document).ready(function() {
                     data: formData,
                     dataType: "xml",
                     crossDomain: true,
-                    xhrFields: {withCredentials: true}
+                    xhrFields: {withCredentials: false}
                 }).done(function(data) {
                     console.log(data);
                 }).fail(function(data) {
