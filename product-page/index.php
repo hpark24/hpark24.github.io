@@ -91,10 +91,6 @@
                     <img src="image/iphone-actual-app.png" alt="It tracks your shipment." />
                     <div id="box-in-app">
                         <p id="package-id">ID</p>
-                        <div id="date">
-                            <p id="package-start">Start Date</p>
-                            <p id="package-end">End Date</p>
-                        </div>
                         <div id="progress-bar"></div>
                     </div>
                 </div>

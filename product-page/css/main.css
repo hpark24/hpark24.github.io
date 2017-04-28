@@ -267,13 +267,12 @@ main #how-it-works div:last-child p{
 
 main #try-it-out {
     margin-top: 0px;
-    height: 800px;
     background-color: #439EEA;
     text-align: center;
 }
 
 main #try-it-out h2 {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     color: #FFFFFF;
 }
 
@@ -298,6 +297,7 @@ main #try-it-out form input[type="text"] {
 }
 
 main #try-it-out #usps-form {
+    padding-top:40px;
     margin-bottom: 60px;
 }
 
@@ -311,35 +311,59 @@ main #try-it-out #app-screen img{
 }
 
 main #try-it-out #box-in-app {
+    display: none;
     position: absolute;
-    width: 379px;
+    width: 378px;
     height: 98px;
     background-color: #fff;
     left: calc(50%);
     top: 177px;
     transform: translate(-50%, 0%);
+    border-bottom: 1px solid #c3c3c3;
+    /*box-shadow: 0px 2px 1px 1px #b3b3b3;*/
 }
 
-main #try-it-out #box-in-app #progressbar{
+main #try-it-out #box-in-app #progress-bar{
     position: absolute;
-    width: 379px;
-    height: 98px;
-    background-color: #fff;
-    left: calc(50%);
-    top: 177px;
-    transform: translate(-50%, 0%);
+    top: 60px;
+    left: 15px;
+    width: 80px;
+    height: 22px;
+    background-color: #49b1ff;
+    border-radius: 11px;
 }
 
 main #try-it-out #box-in-app p{
     text-align: left;
     line-height: 17px;
-    margin: 13px 0px 0px 15px;
+    margin: 10px 0px 0px 15px;
     
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
     font-family: 'Arial', sans-serif;
 }
 
+main #try-it-out #box-in-app #date{
+    margin: 10px 15px 0px 15px;
+}
+
+main #try-it-out #box-in-app #date p{
+    line-height: 17px;
+    margin: 0;
+    
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Arial', sans-serif;
+    color: #707070;
+}
+
+main #try-it-out #box-in-app #date #package-start{
+    float: left;
+}
+
+main #try-it-out #box-in-app #date #package-end{
+    float: right;
+}
 
 main #try-it-out #iphone-cover {
     position: relative;

@@ -34,11 +34,15 @@ $(document).ready(function() {
                 
                 // $("#try-it-out h2").text(formData[0].value);
                 
-                console.log(formData);
+                // console.log(formData[0].value);
+                
+                var uspsUrl = 'https://secure.shippingapis.com/ShippingAPI.dll?API=TrackV2&XML=<TrackRequest USERID="849PRATT1002"><TrackID ID="' + formData[0].value + '"></TrackID></TrackRequest>';
+                
+                console.log(uspsUrl);
                 
                 $.ajax({
                     type: "GET",
-                    url: 'https://secure.shippingapis.com/ShippingAPI.dll?API=TrackV2&XML=<TrackRequest USERID="849PRATT1002"><TrackID ID="9400111899223130473898"></TrackID></TrackRequest>',
+                    url: uspsUrl,
                     data: formData,
                     dataType: "xml"
                 }).done(function(data) {
