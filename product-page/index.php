@@ -8,11 +8,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/main.js"></script>
         
-        <!--<?php-->
-        <!--    // header('Access-Control-Allow-Origin: *');-->
-        <!--    // header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');-->
-        <!--    // header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');-->
-        <!--?>-->
+        <?php
+            header('Access-Control-Allow-Origin: *');
+            header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
+        ?>
     </head>
     <body>
         <header>
@@ -23,12 +22,11 @@
             
                 <div id="copy">
                     <h1>Always Know Where Your Packages Are</h1>
-                    <h3>Put your online transaction information and be notified of when your package arrives</h3>
-                    <h2>Launching This Summer</h2>
-                    <h4>We will send an email to you when it's ready</h4>
+                    <h3>Our iOS app makes tracking your packages easier than ever.</h3>
+                    <h2>We're launching this summer</h2>
+                    <h4>Get notified when we do.</h4>
                     <form class="email-form" id="headerMailFrom">
-                        <input type="text" name="email" placeholder="Give Us Your Email Address">
-                        <!--<button>Done</button>-->
+                        <input type="text" name="email" placeholder="Enter Your Email">
                         <input type="submit" value="Send it">
                     </form>
                     <div class="success-response">
@@ -41,8 +39,8 @@
         <main>
             <div class="arc-border"></div>
             <section id="synopsis">
-                <h2>Never be clueless about your package </h2>
-                <p>WW will collect the transactions you made from any online retail store, track your packages, and then tell you when it will arrive to yoour home.</p>
+                <h2>Stop wondering where your packages are</h2>
+                <p>WW collects the transactions you made from online stores, tracks your packages and let's you know when they'll arrive.</p>
             </section>
             <div class="arc-border flip"></div>
             
@@ -63,7 +61,6 @@
                     <h3>Watch the progress bar and wait</h3>
                     <p>
                         Check the progress and arrival date of your package at any time.</br>
-                        <!--<strike>For third party retailers, just add a tracking code of your item.</strike>-->
                     </p>
                 </div>
                 
@@ -81,13 +78,14 @@
             <section id="try-it-out">
                 <div id="usps-form">
                     <h2>Try It Out</h2>
-                    <h3>Put your USPS tracking code to test your progress bar</h3>
-                    <!--<form method=”POST” name="uspsForm" ACTION=tracking.php>-->
+                    <h3>Add a USPS tracking code to see how it works.</h3>
                     <form>
                         <input type="text" placeholder="USPS Code" name="uspsCode">
-                        <!--<button>Done</button>-->
                         <input type="submit" value="Try this">
                     </form>
+                    <div class="success-response">
+                        <p></p>
+                    </div>
                 </div>
                 <div id="app-screen">
                     <img src="image/iphone-actual-app.png" alt="It tracks your shipment." />
@@ -101,25 +99,20 @@
                     </div>
                 </div>
                 <div id="iphone-cover"></div>
-                <!--<img class="arc-border" src="image/arc-border-concave.svg" />-->
             </section>
         </main>
         
         
         <footer>
-            <h2>Are you getting interested in WW?</h2>
-            <h3>We will notify you by email when our app launches</h3>
+            <h2>Interested in WW?</h2>
+            <h3>We're launching this summer.<br />Provide your email and we'll let you know when we're in the App Store.</h3>
             <form class="email-form" id="footerMailFrom">
-                <input type="text" name="email" placeholder="Write Your Email Address">
-                <!--<button>Done</button>-->
+                <input type="text" name="email" placeholder="Enter Your Email">
                 <input type="submit" value="Done!">
             </form>
             <div class="success-response">
                 <p></p>
             </div>
         </footer>
-        
-        <!--<img class="arc-border flip" src="image/arc-border-concave.svg" />-->
-        <!--<div id="last-div"></div>-->
     </body>
 </html>
