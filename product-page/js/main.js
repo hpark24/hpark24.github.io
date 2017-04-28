@@ -47,10 +47,9 @@ $(document).ready(function() {
                 $.ajax({
                     type: "GET",
                     url: uspsUrl,
-                    data: formData,
                     dataType: "xml",
-                    crossDomain: true,
-                    xhrFields: {withCredentials: false}
+                    headers: { 'Access-Control-Allow-Origin': '*' },
+                    crossDomain: true
                 }).done(function(data) {
                     console.log(data);
                 }).fail(function(data) {
