@@ -47,7 +47,8 @@ $(document).ready(function() {
                     url: uspsUrl,
                     data: formData,
                     dataType: "xml",
-                    crossDomain: true
+                    crossDomain: true,
+                    xhrFields: {withCredentials: true}
                 }).done(function(data) {
                     console.log(data);
                 }).fail(function(data) {
