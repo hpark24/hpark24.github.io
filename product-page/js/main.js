@@ -28,6 +28,8 @@ $(document).ready(function() {
             });
     });
             
+            
+            
     $("#usps-form form").submit(
             function(event) {
                 var formData = $(this).serializeArray();
@@ -44,7 +46,8 @@ $(document).ready(function() {
                     type: "GET",
                     url: uspsUrl,
                     data: formData,
-                    dataType: "xml"
+                    dataType: "xml",
+                    crossDomain: true
                 }).done(function(data) {
                     console.log(data);
                 }).fail(function(data) {
