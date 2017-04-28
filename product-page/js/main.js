@@ -32,11 +32,13 @@ $(document).ready(function() {
             function(event) {
                 var formData = $(this).serializeArray();
                 var uspsUrl = 'https://secure.shippingapis.com/ShippingAPI.dll?API=TrackV2&XML=<TrackRequest USERID="849PRATT1002"><TrackID ID="' + formData[0].value + '"></TrackID></TrackRequest>';
+                var proxy = "https://cors-anywhere.herokuapp.com/";
                 
                 $.ajax({
                     type: "GET",
-                    url: uspsUrl,
-                    dataType: "text"
+                    url: proxy + uspsUrl,
+                    dataType: "text",
+                    header: ""
                 }).done(function(data) {
                     $xml = $( $.parseXML(data) );
                     
